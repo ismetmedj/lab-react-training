@@ -36,3 +36,50 @@
     transform: rotate(360deg);
   }
 }
+
+.idCardContainer {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid black;
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.idCardInfo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+h1 {
+  margin-left: 0.5rem;
+}
+
+.greetings {
+  border: 1px solid black;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+.greetingsP {
+  margin: 0;
+}
+
+.rgb {
+  text-align: center;
+  margin: 25px;
+}
+
+.allCreditCard {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0.5rem;
+}
+
+.aCreditCard {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+}
