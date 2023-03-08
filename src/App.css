@@ -83,3 +83,15 @@ h1 {
   margin: 1rem;
   border-radius: 5%;
 }
+
+.driverCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.driverContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

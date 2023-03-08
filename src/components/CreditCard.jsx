@@ -7,18 +7,25 @@ const CreditCard = (props) => {
   const bgColor = {
     backgroundColor: `${props.bgColor}`,
   };
-
-for(let i = 1; i < props.number.length; i++) {
-    if (props.number.length - i =)
-}
+  let display = '';
+  for (let i = 0; i < props.number.length; i++) {
+    if (props.number.length - 1 - i > 4) {
+      display += '*';
+      // console.log(display);
+    } else if (props.number.length - 1 - i < 4) {
+      display += props.number[i];
+      // console.log(display);
+    }
+  }
   return (
     <div style={bgColor} className="aCreditCard">
       <div className="typeCreditCard">{props.type}</div>
       <div style={color} className="numberCreditCard">
-        {props.number}
+        {display}
       </div>
       <div style={color} className="dateAndBank">
-        Expires : {props.expirationMonth}/{props.expirationYear} {props.bank}
+        Expires : {props.expirationMonth.toString().padStart(2, '0')}/
+        {props.expirationYear.toString().slice(-2)} {props.bank}
       </div>
       <div style={color} className="userCreditCard">
         {props.owner}
